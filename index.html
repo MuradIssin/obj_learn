@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal_4-3_lesson</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff" as="font" type="font/woff" crossorigin>
+
+  <script defer src="tasks01.js"></script>
+  <script defer src="tasks02.js"></script>
+  <script defer src="tasks03.js"></script>
+
+</head>
+
+<body>
+  <!-- <section class="modal" aria-modal="true"> -->
+
+
+  <section class="cms">
+    <div class="container">
+      <div class="cms__header">
+        <div class="cms__title">CMS</div>
+        <div class="set__total">
+          <span class="set__total-text">Итоговая стоимость:</span>
+          <span class="set__total-amount">$900.00</span>
+        </div>
+        <!-- <button type="submit" class="set__submit">Добавить товар</button> -->
+      </div>
+      <div class="modal__line"></div>
+
+      <div class="cms__table table">
+
+        <div class="table__head">
+          <div class="table__wrapper-sort">
+
+            <button type="submit" class="table__filter-button">
+              <svg class="table__filter-logo" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path d="M12 12L20 4V0H0V4L8 12V20L12 16V12Z" fill="currentcolor" />
+                </g>
+              </svg>
+              <span class="table__filter-text">Фильтр</span>
+            </button>
+
+            <div class="table__wrapper-search">
+              <input type="search" name="input-search" id="" placeholder="Поиск по наименованию и категории"
+                class="table__search">
+              <button type="submit" class="search__logo"></button>
+            </div>
+
+          </div>
+          <button type="submit" class="set__submit">Добавить товар</button>
+        </div>
+
+        <table class="table__main">
+
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Наименование</th>
+              <th>Категория</th>
+              <th class="cell__center">ед/изм</th>
+              <th class="cell__center"> количество</th>
+              <th class="cell__right">цена</th>
+              <th class="cell__right">ИТОГ</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>246016548</td>
+              <td>Навигационная система Soundmax</td>
+              <td>Техника для дома</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">5</td>
+              <td class="cell__right">$100</td>
+              <td class="cell__right">$500</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__no-image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>937295527</td>
+              <td>Настольная игра “На 4-х ногах”</td>
+              <td>Настольные игры</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">12</td>
+              <td class="cell__right">$14</td>
+              <td class="cell__right">$168</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>246016548</td>
+              <td>Навигационная система Soundmax</td>
+              <td>Техника для дома</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">5</td>
+              <td class="cell__right">$100</td>
+              <td class="cell__right">$500</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>246016548</td>
+              <td>Навигационная система Soundmax</td>
+              <td>Техника для дома</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">5</td>
+              <td class="cell__right">$100</td>
+              <td class="cell__right">$500</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>246016548</td>
+              <td>Навигационная система Soundmax</td>
+              <td>Техника для дома</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">5</td>
+              <td class="cell__right">$100</td>
+              <td class="cell__right">$500</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>246016548</td>
+              <td>Навигационная система Soundmax</td>
+              <td>Техника для дома</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">5</td>
+              <td class="cell__right">$100</td>
+              <td class="cell__right">$500</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>246016548</td>
+              <td>Навигационная система Soundmax</td>
+              <td>Техника для дома</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">5</td>
+              <td class="cell__right">$100</td>
+              <td class="cell__right">$500</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>246016548</td>
+              <td>Навигационная система Soundmax</td>
+              <td>Техника для дома</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">5</td>
+              <td class="cell__right">$100</td>
+              <td class="cell__right">$500</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>246016548</td>
+              <td>Навигационная система Soundmax</td>
+              <td>Техника для дома</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">5</td>
+              <td class="cell__right">$100</td>
+              <td class="cell__right">$500</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>246016548</td>
+              <td>Навигационная система Soundmax</td>
+              <td>Техника для дома</td>
+              <td class="cell__center">шт</td>
+              <td class="cell__center">5</td>
+              <td class="cell__right">$100</td>
+              <td class="cell__right">$500</td>
+              <td>
+                <div class="cell_button">
+                  <button class="cell__image"></button>
+                  <button class="cell__editable"></button>
+                  <button class="cell__delete"></button>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+
+
+        </table>
+
+        <div class="table__footer">
+
+          <div class="table__show-pages">
+            <label for="table__show-rows" class="table__show-rows-title">Показывать на странице:</label>
+
+            <div class="select-wrapper-row">
+              <select name="table__show-rows" id="table__show-rows" class="table__show-rows-select">
+                <option value=" 10" selected>10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+              </select>
+            </div>
+
+
+            <!-- <span class="table__show-rows">10</span>
+            <button class="table__pages-btn">
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 5L0 0H8L4 5Z" fill="currentcolor" />
+              </svg>
+            </button> -->
+
+            <!-- пример который удалить надо будет -->
+            <!-- <label for="city-select">Нестандартная стрелочка</label>
+            <div class="select-wrapper">
+              <select name="city" id="city-select">
+                <option selected disabled>-- Выберите город --</option>
+                <option value="petersburg">Санкт-Петербург</option>
+                <option value="moscow">Москва</option>
+                <option value="kazan">Казань</option>
+                <option value="samara">Самара</option>
+                <option value="perm">Пермь</option>
+                <option value="novosibirsk">Новосибирск</option>
+              </select>
+            </div> -->
+
+          </div>
+
+          <div class="table__rows-pages">
+            <span class="table__rows">1-10</span>
+            of
+            <span class="table__pages">276</span>
+          </div>
+
+
+          <div class="table__control">
+            <button class="table__control-btm"></button>
+            <button class="table__control-btm--right"></button>
+          </div>
+
+        </div>
+
+        <!-- <div class="modal__line"></div>
+        bottom -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- visually-hidden -->
+  <section class="modal" aria-modal="true">
+    <div class="modal__window overlay">
+      <button type="submit" class="modal__close-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round" />
+          <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <div class="modal__add-good">
+
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank" class="modal__form">
+
+          <h3 class="modal__title">Добавить ТОВАР</h3>
+
+          <div class="modal__line"></div>
+
+          <fieldset class="modal__set set">
+
+            <div class="set__unit set__name">
+              <label for="name" class="set__label">наименование</label>
+              <input id="name" type="text" name="name" class="set__input">
+            </div>
+
+            <div class="set__unit set__category">
+              <label for="category" class="set__label"> Категория </label>
+              <input id="category" type="text" name="category" class="set__input">
+            </div>
+
+            <div class="set__unit set__measure">
+              <label for="measure" class="set__label"> Единицы измерения</label>
+              <input id="measure" type="text" name="measure" class="set__input">
+            </div>
+
+            <div class="set__unit set__discount">
+              <label for="set-checkbox" class="set__label">Дисконт</label>
+              <div id="set-checkbox" class="set__wrapper-discount">
+                <input type="checkbox" name="set-checkbox" class="set__checkbox">
+                <input type="text" name="discount" class="set__input-discount">
+              </div>
+            </div>
+
+            <div class="set__unit set__description">
+              <label for="description" class="set__label">Описание</label>
+              <textarea id="description" name="description" class="set__input set__discription"> </textarea>
+            </div>
+
+            <div class="set__unit set__quantity">
+              <label for="quantity" class="set__label"> Количество </label>
+              <input id="quantity" type="text" name="quantity" class="set__input">
+            </div>
+
+            <div class="set__unit set__price">
+              <label for="price" class="set__label">Цена</label>
+              <input id="price" type="text" name="price" class="set__input">
+            </div>
+
+            <div class="set__add-file">
+              <label for="upload-photo" class="set__file-label">
+                Добавить изображение
+              </label>
+              <input type="file" name="upload-photo" id="upload-photo" class="set__add-image">
+            </div>
+
+            <!-- пример вложения файла -->
+            <!-- <div class="input__wrapper">
+                <input type="file" name="file" id="input__file" class="input input__file">
+                <label for="input__file" class="input__file-button">
+                  <span class="input__file-button-text">Выберите файл_8888</span>
+                  <span class="input__file-icon-wrapper">
+                    <img class="input__file-icon" src="img/04.jpg" alt="Выбрать файл" width="25">
+                  </span>
+                </label>
+              </div> -->
+          </fieldset>
+
+          <div class="set__bottom-wrapper">
+            <div class="set__total">
+              <span class="set__total-text">Итоговая стоимость:</span>
+              <span class="set__total-amount">$900.00</span>
+            </div>
+            <button type="submit" class="set__submit">Добавить товар</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
