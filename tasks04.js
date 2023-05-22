@@ -20,7 +20,6 @@ const getAveragePriceGoods = allCash => {
   let goods = 0;
   let summaGoods = 0;
   for (const elem of allCash) {
-    console.log(elem[0])
     goods += elem[0];
     summaGoods += elem[1];
   }
