@@ -5,21 +5,18 @@
 console.warn('Третья задача');
 
 // Третья задача:
-// Напишите функцию, которая принимает строку и возвращает обратную строку
-// Пример: "Привет мир" => "рим тевирП"
 
 
 
-const incomeString = "Привет мир!";
+const names = ['Noah', 'Liam', 'Mason', 'Jacob', 'Robot', 'William', 'Ethan', 'Michael', 'Alexander'];
 
-const reverseString = (incomeStr) => {
-  let resultStr = '';
-  for (let i = incomeStr.length - 1; i >= 0; i--) {
-    resultStr += incomeStr[i];
-    // console.log(i, resultStr);
+const addPrefix = (nameIn, prefix) => {
+  const newNames = [];
+  for (const elem of nameIn) {
+    newNames.push(prefix + ' ' + elem)
   }
-  return resultStr;
+  return newNames;
 }
 
-// console.log(reverseString(incomeString));
-console.log(`принятая строка "${incomeString}" результат "${reverseString(incomeString)}"`)
+console.log(`Входящий список ${names} результат ${addPrefix(names, 'Mr')}`)
+
