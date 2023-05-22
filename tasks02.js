@@ -5,22 +5,16 @@
 console.warn('Вторая задача');
 
 // Вторая задача:
-// Напишите функцию isPrime.
-// Она принимает число и возвращает true, если число является простым, а в ином случае false.
-// Простое число - целое положительное число, имеющее ровно два различных натуральных делителя - единицу и самого себя.
-// Например, 5 - простое число, так как делится без остатка только на 1 и на себя.
-// 151, 911, 1987 - так же простые числа
-// Используйте цикл for в функции
 
-const incomeNumber = 1987;
 
-const isPrime = (income) => {
-  for (i = 2; i < income; i++) {
-    if (income % i === 0) {
-      return false
-    }
+const allCashbox = [4500, 3120, 650, 1250, 7830, 990, 13900, 370];
+
+const getAverageValue = arr => {
+  let total = 0;
+  for (const index in arr) {
+    total += arr[index]
   }
-  return true;
+  return Math.floor(total / arr.length)
 }
 
-console.log(`${incomeNumber} -это простое число? ${isPrime(incomeNumber)}`);
+console.log(`Среднееарифметическое значение с округлением до целого числа: ${getAverageValue(allCashbox)}`);
