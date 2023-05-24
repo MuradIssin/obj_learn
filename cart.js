@@ -9,18 +9,26 @@ const cart = {
   totalPrice: 0, // общая стоимость товаров
   count: 0, //количество товаров
 }
-// console.log(`первичный объект корзины`, cart);
 
-const getTotalPrice = () => {
-  return cart.totalPrice;
-};
+
+Object.defineProperty(cart, 'totalPrice', {
+  get() {
+    return calculateItemPrice()
+  }
+  // set() {
+
+  // }
+});
+
+// удалено уроком 9
+// const getTotalPrice = () => {
+//   return cart.totalPrice;
+// };
 
 const add = (nameProduct, priceProduct, quantity = 1) => {
   const arrayGood = [nameProduct, priceProduct, quantity];
-  // console.log(arrayGood);
   cart.items[cart.items.length] = arrayGood;
-  // console.log(`cart:`, cart);
-  cart.totalPrice = calculateItemPrice();
+  // cart.totalPrice = calculateItemPrice();
   increaseCount(quantity);
 };
 
@@ -30,19 +38,12 @@ const increaseCount = (add) => {
 
 const calculateItemPrice = () => {
   const newTotal = cart.items.reduce((acc, item) => {
-    // console.log(`значение стоимости товара`, acc, item, item[1])
     return item[1] + acc;
   }, 0)
-  // console.log(`итого`, newTotal)
   return newTotal;
 };
 
 const clear = () => {
-  // cart = {
-  //   items: [], //товары
-  //   totalPrice: 0, // общая стоимость товаров
-  //   count: 0, //количество товаров
-  // }
   cart.items = [];
   cart.totalPrice = 0;
   cart.count = 0;
@@ -53,7 +54,7 @@ const print = () => {
   cart.items.forEach((item) => {
     console.log(`${item[0]}  общая стоимость ${item[1]} количество ${item[2]}`)
   });
-  console.log(`общая стоимость корзины ${getTotalPrice()} уе`)
+  console.log(`общая стоимость корзины ${cart.totalPrice} уе`)
 };
 
 
@@ -62,6 +63,17 @@ add("good", 100, 20);
 add("good2", 1, 200);
 add("good3", 450);
 add("good4", 45, 888);
+add("good5", 450, 88);
+
+
 print();
-clear();
+
+console.log("задание 9 урока модуль 4");
+// cart.totalPrice = 10;
+
 print();
+
+// clear();
+// print();
+
+
