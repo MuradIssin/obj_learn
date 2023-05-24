@@ -6,7 +6,7 @@ console.warn('Задание1 - Вторая задача');
 
 // Вторая задача:
 
-const arrayRandom2 = (arrayLength = 5, m = -100, n = 100, e) => {
+const arrayRandom2 = (arrayLength = 5, m = -100, n = 100) => {
   const startNumber = Math.min(n, m);
   const finishNumber = Math.max(n, m);
   // console.log(startNumber, finishNumber);
