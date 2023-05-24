@@ -11,7 +11,7 @@ const arrayRandom3 = (arrayLength = 5, m = -100, n = 100, evenOrOdd) => {
   const startNumber = Math.min(n, m);
   const finishNumber = Math.max(n, m);
 
-  if (evenOrOdd.toLowerCase() != "even" && evenOrOdd.toLowerCase() != "odd") {
+  if (evenOrOdd.toLowerCase() !== "even" && evenOrOdd.toLowerCase() !== "odd") {
     return "не был корректно введен even или odd"
   }
 
@@ -22,7 +22,7 @@ const arrayRandom3 = (arrayLength = 5, m = -100, n = 100, evenOrOdd) => {
     let tryAgain = true;
     do {
       let newNumber = Math.round(Math.random() * (finishNumber - startNumber + 1)) + startNumber;
-      if ((newNumber % 2 != 0) && evenOrOdd.toLowerCase() === 'odd') {
+      if ((newNumber % 2 !== 0) && evenOrOdd.toLowerCase() === 'odd') {
         newArray.push(newNumber);
         tryAgain = false;
       }
