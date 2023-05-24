@@ -24452,7 +24452,7 @@ const listIPv4 = [
 
 const cleanFun = (incomeArray) => {
   const listNoRepeat = new Set();
-  listIPv4.forEach((item) => {
+  incomeArray.forEach((item) => {
     listNoRepeat.add(item);
   })
   return listNoRepeat.size
