@@ -24,7 +24,7 @@ let tryAnswer;
 
 let i = 0;
 let direction = '';
-while (guessNumber3 != +tryAnswer) {
+while (guessNumber3 !== +tryAnswer) {
   // console.log("цикл", i++)
   tryAnswer = prompt(`${direction} угадай число от ${inputMin} до ${inputMax}`);
 
@@ -67,5 +67,7 @@ while (guessNumber3 != +tryAnswer) {
 
   }
 }
+
+
 
 
